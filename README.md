@@ -3,11 +3,11 @@
 **A modern, organization-centric inventory and point-of-sale management platform for small businesses.**
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://github.com/Mohanraj-1107/erpclient)
-[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)](https://github.com/Mohanraj-1107/erpclient)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1.1-6DB33F?logo=springboot&logoColor=white)](https://github.com/Mohanraj-1107/ERP)
-[![Java](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white)](https://github.com/Mohanraj-1107/ERP)
-[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)](https://github.com/Mohanraj-1107/ERP)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://github.com/Mohanraj-1107/actus-client)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)](https://github.com/Mohanraj-1107/actus-client)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1.1-6DB33F?logo=springboot&logoColor=white)](https://github.com/Mohanraj-1107/actus-server)
+[![Java](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white)](https://github.com/Mohanraj-1107/actus-server)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)](https://github.com/Mohanraj-1107/actus-server)
 
 Actus helps small businesses replace spreadsheets and disconnected tools with a single system for managing products, stock, customers, suppliers, purchases, and sales. Every business operates inside its own **organization workspace**, keeping its data isolated and secure.
 
@@ -21,15 +21,15 @@ This is the **parent repository** and project landing page. The application sour
 
 | Repository | Role | Technology | Link |
 |------------|------|------------|------|
-| **Client** | React single-page application and admin dashboard | React 19, TypeScript, Vite, Tailwind CSS | [erpclient](https://github.com/Mohanraj-1107/erpclient) |
-| **Server** | REST API, business logic, authentication, and persistence | Java 17, Spring Boot, MySQL | [erpserver](https://github.com/Mohanraj-1107/ERP) |
+| **Client** | React single-page application and admin dashboard | React 19, TypeScript, Vite, Tailwind CSS | [actus-client](https://github.com/Mohanraj-1107/actus-client) |
+| **Server** | REST API, business logic, authentication, and persistence | Java 17, Spring Boot, MySQL | [actus-server](https://github.com/Mohanraj-1107/actus-server) |
 
 | Resource | Location |
 |----------|----------|
-| Client setup and commands | [Client README → Getting Started](https://github.com/Mohanraj-1107/erpclient#getting-started) |
-| Client architecture and conventions | [Client Architecture.md](https://github.com/Mohanraj-1107/erpclient/blob/master/Architecture.md) |
-| Server setup and configuration | [Server README → Quick Start](https://github.com/Mohanraj-1107/ERP#quick-start) |
-| Server API and domain documentation | [Server docs/docs.md](https://github.com/Mohanraj-1107/ERP/blob/master/docs/docs.md) |
+| Client setup and commands | [Client README → Getting Started](https://github.com/Mohanraj-1107/actus-client#getting-started) |
+| Client architecture and conventions | [Client Architecture.md](https://github.com/Mohanraj-1107/actus-client/blob/master/Architecture.md) |
+| Server setup and configuration | [Server README → Quick Start](https://github.com/Mohanraj-1107/actus-server#quick-start) |
+| Server API and domain documentation | [Server docs/docs.md](https://github.com/Mohanraj-1107/actus-server/blob/master/docs/docs.md) |
 
 ---
 
@@ -176,33 +176,33 @@ Each repository contains its own installation, configuration, and execution inst
 ### Client
 
 ```bash
-git clone https://github.com/Mohanraj-1107/erpclient.git
-cd erpclient
+git clone https://github.com/Mohanraj-1107/actus-client.git
+cd actus-client
 npm install
 npm run dev
 ```
 
 The client runs at `http://localhost:5173`. Set `VITE_API_BASE` if the API is not available at `http://localhost:8080/erp/api`.
 
-- [Client README](https://github.com/Mohanraj-1107/erpclient#readme)
-- [Client setup and commands](https://github.com/Mohanraj-1107/erpclient#getting-started)
-- [Client architecture](https://github.com/Mohanraj-1107/erpclient/blob/master/Architecture.md)
+- [Client README](https://github.com/Mohanraj-1107/actus-client#readme)
+- [Client setup and commands](https://github.com/Mohanraj-1107/actus-client#getting-started)
+- [Client architecture](https://github.com/Mohanraj-1107/actus-client/blob/master/Architecture.md)
 
 ### Server
 
 Prerequisites: **Java 17** and **MySQL** running on `localhost:3306`.
 
 ```bash
-git clone https://github.com/Mohanraj-1107/ERP.git
-cd ERP
+git clone https://github.com/Mohanraj-1107/actus-server.git
+cd actus-server
 ./mvnw spring-boot:run
 ```
 
 The API runs at `http://localhost:8080/erp/api`. Configure the database, JWT secret, and cookie settings through the environment variables documented in the server repository.
 
-- [Server README](https://github.com/Mohanraj-1107/ERP#readme)
-- [Server quick start](https://github.com/Mohanraj-1107/ERP#quick-start)
-- [Server technical documentation](https://github.com/Mohanraj-1107/ERP/blob/master/docs/docs.md)
+- [Server README](https://github.com/Mohanraj-1107/actus-server#readme)
+- [Server quick start](https://github.com/Mohanraj-1107/actus-server#quick-start)
+- [Server technical documentation](https://github.com/Mohanraj-1107/actus-server/blob/master/docs/docs.md)
 
 ### Running the full stack
 
@@ -217,8 +217,8 @@ The API runs at `http://localhost:8080/erp/api`. Configure the database, JWT sec
 
 Contributions, bug reports, and suggestions are welcome. Please open an issue or pull request in the relevant repository:
 
-- **Client changes:** [erpclient issues](https://github.com/Mohanraj-1107/erpclient/issues)
-- **Server changes:** [ERP issues](https://github.com/Mohanraj-1107/ERP/issues)
+- **Client changes:** [actus-client issues](https://github.com/Mohanraj-1107/actus-client/issues)
+- **Server changes:** [actus-server issues](https://github.com/Mohanraj-1107/actus-server/issues)
 
 ---
 
